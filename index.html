@@ -270,6 +270,12 @@
           <td>Analytics, advertising</td>
         </tr>
         <tr>
+  <td>Public leaderboard data</td>
+  <td>In-game nickname, level, total XP, avatar ID</td>
+  <td>Firebase Firestore</td>
+  <td>Displaying global player ranking</td>
+</tr>
+        <tr>
           <td>App interactions</td>
           <td>Screens visited, button taps, session duration</td>
           <td>Firebase Analytics</td>
@@ -377,9 +383,14 @@
   <!-- 7. RETENTION -->
   <section id="retention">
     <h2>7. Data retention</h2>
-    <p>Data stored locally on your device remains there until you uninstall the Application. We have no access to this data.</p>
-    <p>Data collected by Firebase Analytics and Crashlytics is retained for up to <strong>24 months</strong>, after which it may be stored in anonymised aggregate form. AdMob data retention is governed by Google's own policies.</p>
-    <p>To request deletion of any data associated with your use of the Application, please contact us at <a href="mailto:krzyzowka.challenge@gmail.com">krzyzowka.challenge@gmail.com</a>.</p>
+   <p>Leaderboard data (nickname, level, XP, avatar ID) is stored in 
+Firebase Firestore and is publicly visible to other players. 
+This data is retained as long as you use the Application.</p>
+<p>To request deletion of your leaderboard entry or any other data, 
+please email <a href="mailto:krzyzowka.challenge@gmail.com">
+krzyzowka.challenge@gmail.com</a> with subject 
+<strong>"Data Deletion Request"</strong> and your in-game nickname. 
+We will process your request within <strong>30 days</strong>.</p>
   </section>
 
   <!-- 8. SECURITY -->
