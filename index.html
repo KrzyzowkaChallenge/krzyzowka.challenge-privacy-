@@ -380,17 +380,25 @@
     <p><strong>Opt-out of data collection:</strong> You can disable personalised advertising in your device settings (Google Ads settings / Limit Ad Tracking). You can stop all SDK data collection by uninstalling the Application.</p>
   </section>
 
-  <!-- 7. RETENTION -->
+<!-- 7. RETENTION -->
   <section id="retention">
     <h2>7. Data retention</h2>
-   <p>Leaderboard data (nickname, level, XP, avatar ID) is stored in 
-Firebase Firestore and is publicly visible to other players. 
+    <p>Leaderboard data (nickname, level, XP, avatar ID) is stored in
+Firebase Firestore and is publicly visible to other players.
 This data is retained as long as you use the Application.</p>
-<p>To request deletion of your leaderboard entry or any other data, 
+    <p>To request deletion of your leaderboard entry or any other data,
 please email <a href="mailto:krzyzowka.challenge@gmail.com">
-krzyzowka.challenge@gmail.com</a> with subject 
-<strong>"Data Deletion Request"</strong> and your in-game nickname. 
+krzyzowka.challenge@gmail.com</a> with subject
+<strong>"Data Deletion Request"</strong> and your in-game nickname.
 We will process your request within <strong>30 days</strong>.</p>
+    <h3>Local data and game progress</h3>
+    <p>Certain game data — including coin balance, daily bonus timers, solved puzzle
+statistics, and ad cooldowns — is stored exclusively in the local storage of your
+device (SharedPreferences). This data is <strong>not backed up to any server</strong>
+and <strong>cannot be restored</strong> by the Service Provider. Clearing the
+Application's data via Android system settings ("Clear Data") will result in
+<strong>permanent and irreversible loss</strong> of this locally stored progress.
+The Service Provider bears no responsibility for data loss resulting from this action.</p>
   </section>
 
   <!-- 8. SECURITY -->
