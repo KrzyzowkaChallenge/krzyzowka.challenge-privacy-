@@ -211,7 +211,7 @@
   <header>
     <span class="app-badge">Krzyżówka Challenge</span>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: 2026-03-31 &nbsp;·&nbsp; Last updated: 2026-03-31</p>
+    <p class="meta">Effective date: 2026-03-31 &nbsp;·&nbsp; Last updated: 2026-11-12</p>
   </header>
 
   <nav class="toc" aria-label="Table of contents">
@@ -221,6 +221,7 @@
       <li><a href="#data-collected">What data is collected</a></li>
       <li><a href="#legal-basis">Legal basis for processing</a></li>
       <li><a href="#third-parties">Third-party services</a></li>
+      <li><a href="#ads-consent">Advertising, consent &amp; notifications</a></li>
       <li><a href="#minors">Minors &amp; parental consent</a></li>
       <li><a href="#your-rights">Your rights under GDPR</a></li>
       <li><a href="#retention">Data retention</a></li>
@@ -236,7 +237,7 @@
     <p>This Privacy Policy applies to the <strong>Krzyżówka Challenge</strong> mobile application ("Application") developed by <strong>Paweł Grzejszczak</strong> ("Service Provider", "we", "us"), residing in Poland. The Application is offered as an ad-supported free service.</p>
     <p>We are committed to protecting your personal data in accordance with the <strong>General Data Protection Regulation (GDPR / RODO)</strong> and applicable Polish law.</p>
     <div class="highlight-box">
-      <strong>Key facts at a glance:</strong> Your gameplay progress, settings, coins, and avatar choices are stored <strong>only on your device</strong>. We do not operate our own servers. The only data leaving your device is collected automatically by third-party SDKs (Firebase, AdMob) described below.
+      <strong>Key facts at a glance:</strong> Your gameplay progress, settings, coins, and avatar choices are stored <strong>only on your device</strong>. We do not operate our own servers. Data leaving your device is limited to your public leaderboard entry (stored in Google Firebase) and data collected automatically by third-party SDKs (Google Firebase, Google AdMob and its advertising partners Unity Ads and Liftoff Monetize) described below. In the EEA, the UK and Switzerland we ask for your consent before personalised advertising, using Google's consent form.
     </div>
   </section>
 
@@ -265,9 +266,21 @@
       <tbody>
         <tr>
           <td>Device identifiers</td>
-          <td>Device ID, Advertising ID</td>
-          <td>Firebase, AdMob</td>
+          <td>Device ID, Advertising ID (AAID / IDFA)</td>
+          <td>Firebase, AdMob, Unity Ads, Liftoff Monetize</td>
           <td>Analytics, advertising</td>
+        </tr>
+        <tr>
+          <td>Network &amp; device data</td>
+          <td>IP address, approximate location derived from IP (country/region), device model, OS version, language</td>
+          <td>AdMob, Unity Ads, Liftoff Monetize</td>
+          <td>Selecting and measuring ads, fraud prevention</td>
+        </tr>
+        <tr>
+          <td>Consent choices</td>
+          <td>Your advertising consent decision (IAB TCF consent string)</td>
+          <td>Google User Messaging Platform (stored on your device)</td>
+          <td>Respecting your privacy choices</td>
         </tr>
         <tr>
   <td>Public leaderboard data</td>
@@ -289,14 +302,15 @@
         </tr>
         <tr>
           <td>Advertising data</td>
-          <td>Ad interactions, ad impressions</td>
-          <td>AdMob</td>
-          <td>Displaying ads</td>
+          <td>Ad interactions, ad impressions, rewarded ad completions</td>
+          <td>AdMob, Unity Ads, Liftoff Monetize</td>
+          <td>Displaying ads, rewarding you in the game</td>
         </tr>
       </tbody>
     </table>
 
-    <p>The Application does <strong>not</strong> collect: precise location data, contacts, photos, microphone or camera input, financial information, or health data.</p>
+    <p>In-app purchases are processed entirely by Google Play or the Apple App Store. We do not receive your payment card details; we only receive confirmation that a purchase was completed.</p>
+    <p>The Application does <strong>not</strong> collect: precise (GPS) location data, contacts, photos, microphone or camera input, financial information, or health data.</p>
     <p>The Application does <strong>not</strong> use Artificial Intelligence (AI) technologies to process your personal data.</p>
   </section>
 
@@ -306,7 +320,8 @@
     <p>We rely on the following legal bases to process personal data:</p>
     <ul>
       <li><strong>Legitimate interests (Art. 6(1)(f))</strong> — processing by Firebase Crashlytics to detect and fix technical errors, which is necessary for the stable operation of the Application.</li>
-      <li><strong>Consent (Art. 6(1)(a))</strong> — processing by Firebase Analytics and AdMob for analytics and personalised advertising. You may withdraw consent at any time (see <a href="#your-rights">Your rights</a>).</li>
+      <li><strong>Consent (Art. 6(1)(a))</strong> — processing by Firebase Analytics, AdMob, Unity Ads and Liftoff Monetize for analytics and personalised advertising. In the EEA, the UK and Switzerland consent is collected through Google's consent form (a certified IAB TCF consent management platform). You may withdraw or change consent at any time in the Application (Settings → "Ustawienia prywatności"), see <a href="#ads-consent">section 5</a>.</li>
+      <li><strong>Legitimate interests (Art. 6(1)(f))</strong> — some advertising partners may process limited data (e.g. for non-personalised ads, ad measurement and fraud prevention) on the basis of legitimate interest. You can object to this in the consent form under "Manage options".</li>
     </ul>
     <p>For users under the age of 16, consent must be given or authorised by a parent or legal guardian (see <a href="#minors">Minors</a> section).</p>
   </section>
@@ -320,14 +335,27 @@
       <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
       <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
       <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+      <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Cloud Firestore</a> (leaderboard and remote game configuration)</li>
+      <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Ads</a> (Unity Technologies) — advertising partner via AdMob mediation</li>
+      <li><a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener noreferrer">Liftoff Monetize</a> (formerly Vungle) — advertising partner via AdMob mediation</li>
     </ul>
-    <p>Data processed by these services is transferred to and stored on Google's servers, which may be located outside the European Economic Area. Google LLC participates in the EU–US Data Privacy Framework and applies standard contractual clauses approved by the European Commission.</p>
+    <p>The full list of advertising partners is available in the consent form ("Manage options" → partner list).</p>
+    <p>Data processed by these services may be transferred to and stored on servers located outside the European Economic Area, including the United States. Such transfers are protected by appropriate safeguards, such as the EU–US Data Privacy Framework where applicable or standard contractual clauses approved by the European Commission.</p>
     <p>We may also disclose data when required by law, court order, or to protect the rights and safety of users or the public.</p>
   </section>
 
-  <!-- 5. MINORS -->
+  <!-- 5. ADS, CONSENT & NOTIFICATIONS -->
+  <section id="ads-consent">
+    <h2>5. Advertising, consent &amp; notifications</h2>
+    <p><strong>Ads.</strong> The Application shows rewarded video ads only when you choose to watch one (e.g. for free coins, a daily bonus or a hint). Ads are delivered by Google AdMob, which runs an auction between AdMob, Unity Ads and Liftoff Monetize.</p>
+    <p><strong>Consent (EEA, UK, Switzerland).</strong> On first launch you see Google's consent form. You can accept, or choose "Manage options" to refuse or customise. If you refuse, you will still see ads, but they will be non-personalised or limited. You can change your decision at any time in the Application: <strong>Settings → "Ustawienia prywatności"</strong>.</p>
+    <p><strong>iOS tracking.</strong> On iPhone and iPad, Apple asks whether you allow tracking (App Tracking Transparency). If you decline, your advertising identifier (IDFA) is not shared.</p>
+    <p><strong>Daily reminder notifications.</strong> The Application can show an optional local notification reminding you about the daily challenge. It is off by default, is enabled only if you agree, and can be switched off at any time in Settings → "Przypomnienie o wyzwaniu" or in your device's notification settings. Reminders are scheduled on your device; no personal data is sent to us for this purpose.</p>
+  </section>
+
+  <!-- 6. MINORS -->
   <section id="minors">
-    <h2>5. Minors &amp; parental consent</h2>
+    <h2>6. Minors &amp; parental consent</h2>
     <p>The Application is designed for users aged <strong>13 and above</strong>. However, under GDPR Article 8 and Polish law, users <strong>under the age of 16</strong> require the consent of a parent or legal guardian for any processing of personal data based on consent (e.g. analytics, personalised ads).</p>
     <div class="warn">
       <strong>For parents and guardians:</strong> If your child is under 16 and uses this Application, please review this Privacy Policy together. If you believe your child has provided personal data without your authorisation, contact us at <a href="mailto:krzyzowka.challenge@gmail.com">krzyzowka.challenge@gmail.com</a> and we will delete it promptly.
@@ -337,7 +365,7 @@
 
   <!-- 6. YOUR RIGHTS -->
   <section id="your-rights">
-    <h2>6. Your rights under GDPR (Art. 15–22)</h2>
+    <h2>7. Your rights under GDPR (Art. 15–22)</h2>
     <p>As a data subject in the European Union, you have the following rights regarding your personal data:</p>
 
     <div class="rights-grid">
@@ -377,12 +405,12 @@
 
     <p>To exercise any of these rights, contact us at <a href="mailto:krzyzowka.challenge@gmail.com">krzyzowka.challenge@gmail.com</a>. We will respond within 30 days.</p>
 
-    <p><strong>Opt-out of data collection:</strong> You can disable personalised advertising in your device settings (Google Ads settings / Limit Ad Tracking). You can stop all SDK data collection by uninstalling the Application.</p>
+    <p><strong>Opt-out of data collection:</strong> You can change or withdraw your advertising consent in the Application (Settings → "Ustawienia prywatności"). You can also reset or delete your advertising ID in your device settings (Android: Settings → Google → Ads; iOS: Settings → Privacy &amp; Security → Tracking). You can stop all SDK data collection by uninstalling the Application.</p>
   </section>
 
 <!-- 7. RETENTION -->
   <section id="retention">
-    <h2>7. Data retention</h2>
+    <h2>8. Data retention</h2>
     <p>Leaderboard data (nickname, level, XP, avatar ID) is stored in
 Firebase Firestore and is publicly visible to other players.
 This data is retained as long as you use the Application.</p>
@@ -403,20 +431,20 @@ The Service Provider bears no responsibility for data loss resulting from this a
 
   <!-- 8. SECURITY -->
   <section id="security">
-    <h2>8. Security</h2>
+    <h2>9. Security</h2>
     <p>All data transmitted by third-party SDKs is encrypted in transit (HTTPS/TLS). Local data on your device is protected by your device's built-in security mechanisms. We strongly advise against jailbreaking or rooting your device, as this may compromise security and affect Application functionality.</p>
     <p>While we and our SDK providers take reasonable measures to protect data, no system is entirely immune to security incidents.</p>
   </section>
 
   <!-- 9. CHANGES -->
   <section id="changes">
-    <h2>9. Changes to this Privacy Policy</h2>
+    <h2>10. Changes to this Privacy Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be published on this page with an updated effective date. We encourage you to review this page periodically. Continued use of the Application after changes are posted constitutes acknowledgment of the updated policy.</p>
   </section>
 
   <!-- 10. CONTACT -->
   <section id="contact">
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <div class="contact-box">
       <p><strong>Email:</strong><br>
       <a href="mailto:krzyzowka.support@gmail.com">krzyzowka.support@gmail.com</a></p>
